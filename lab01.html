@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Laboratorio 1</title>
+
+    <h1>Pregunta 1</h1>
+
+    <p>La similitud viene con la sintaxis pero Java Script solo es funcional cuando se inclu
+        como parte de una pagina de html
+    </p>
+
+    <script>
+
+        function suma(){
+            var Numero1 = Number(document.getElementById('Numero1').value);
+            var Numero2 = Number(document.getElementById('Numero2').value); 
+            
+            var resultado = Numero1 + Numero2
+
+            document.getElementById('resultado').value = resultado
+        }
+
+        function resta(){
+            var Numero1 = Number(document.getElementById('Numero1').value);
+            var Numero2 = Number(document.getElementById('Numero2').value); 
+            
+            var resultado = Numero1 - Numero2
+
+            document.getElementById('resultado').value = resultado
+        }
+
+        function multiplicacion(){
+            var Numero1 = Number(document.getElementById('Numero1').value);
+            var Numero2 = Number(document.getElementById('Numero2').value); 
+            
+            var resultado = Numero1 * Numero2
+
+            document.getElementById('resultado').value = resultado
+        }
+        function division(){
+            var Numero1 = Number(document.getElementById('Numero1').value);
+            var Numero2 = Number(document.getElementById('Numero2').value); 
+            
+            var resultado = Numero1 / Numero2
+
+            document.getElementById('resultado').value = resultado
+        }
+    </script>
+
+</head>
+<body>
+    <h1>Pregunta 2</h1>
+    Numero1 <input type="text" id="Numero1"> <br><br>
+    Numero2 <input type="text" id="Numero2"> <br><br>
+    resultado <input type="text" id="resultado"> <br>
+
+    <input type="button" value="suma" onclick="suma()">
+    <input type="button" value="resta" onclick="resta()">
+    <input type="button" value="multiplicacion" onclick="multiplicacion()">
+    <input type="button" value="division" onclick="division()">
+
+    <h1>Pregunta 3</h1>
+
+    <script>
+        let saludo1='Hola Soy';
+        let saludo2=' Swiftie';
+
+        document.write(saludo1);
+        document.write(saludo2);
+
+    </script>
+
+<h1>Pregunta 4</h1>
+
+<script>
+    const a = true;
+    //console.log(typeof(a));
+    document.write(typeof(a));
+
+    document.write("<br>");
+
+    const PI = 3.14;
+    document.write(typeof( PI));
+</script>
+
+<h1>Pregunta 5</h1>
+
+<h2> Revisar Consola </h2>
+
+<script>
+    var objeto = {
+        "numero": '12',
+        "cadena": 'mensaje',
+        "booleano": true,
+        "objeto": {}
+    }
+    
+    document.write(objeto);
+    console.log(objeto);
+     
+</script>
+
+<h1>Pregunta 6</h1>
+
+<script>
+    let valor1;
+    var resultado=0;
+    valor1 = prompt('Ingrese valor, para problema número 6:'); 
+    console.log(valor1);
+    for(let i = 1; i< valor1; i++)
+    {
+        if ((i%3==0)||(i%5==0))
+        {
+    console.log(resultado);
+            resultado = resultado +i;
+        }
+    }
+    console.log(resultado);
+
+    document.write(resultado);
+</script>
+
+</body>
+</html>
